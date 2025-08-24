@@ -1,5 +1,3 @@
-# SQL-Playground
-
 # SQL Practice – DDL, DML, DQL  
 
 This repository contains my SQL practice notes prepared in **MySQL Workbench**.  
@@ -27,8 +25,7 @@ The purpose of this work is interview preparation and strengthening SQL fundamen
 ### DQL (Data Query Language)  
 - Selecting all records.  
 - Filtering with `WHERE`, `BETWEEN`, `LIKE`, `AND`, `OR`.  
-- Using `ORDER BY` and `DISTINCT`.  
-- Counting records.  
+- Using `DISTINCT` for retriving unique values.  
 
 ### Constraints & Keys  
 - **Primary Key** – Unique identifier for rows.  
@@ -54,14 +51,15 @@ The purpose of this work is interview preparation and strengthening SQL fundamen
    - Insert sample data (DML).  
    - Run queries (DQL).  
 
----
+## 📝 Notes  
+- Always run DDL before DML and DQL.  
+- Drop or truncate tables before re-running inserts to avoid duplicates.
+
+ ---
 
 This version is **exactly upload-ready** for GitHub. It describes your Workbench file, explains what’s inside, gives instructions, and even sample queries.  
 
-
-## 📝 Notes  
-- Always run DDL before DML and DQL.  
-- Drop or truncate tables before re-running inserts to avoid duplicates.  
+ 
 
 ## 👩‍💻 Author  
 ThenDaarnika
