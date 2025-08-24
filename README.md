@@ -51,13 +51,13 @@ The purpose of this work is interview preparation and strengthening SQL fundamen
    - Insert sample data (DML).  
    - Run queries (DQL).  
 
-## 📝 Notes  
+## Notes  
 - Always run DDL before DML and DQL.  
 - Drop or truncate tables before re-running inserts to avoid duplicates.
 
  ---
- ## 📂 SQL Commands File  
-Open the file here 👉 [SQL_DDL,DML,DQL_EXAMPLES.sql](./SQL_DDL,DML,DQL_EXAMPLES.sql)
+ ## SQL Commands File  
+Open the file here --> [SQL_DDL,DML,DQL_EXAMPLES.sql](./SQL_DDL,DML,DQL_EXAMPLES.sql)
 
 This version is **exactly upload-ready** for GitHub. It describes your Workbench file, explains what’s inside, gives instructions, and even sample queries.  
 
