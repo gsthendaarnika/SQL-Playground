@@ -97,10 +97,6 @@ The purpose of this work is **interview preparation** and **strengthening SQL fu
    - DDL → DML → DQL → Joins → Subqueries → Window functions → Procedures/Functions → Triggers → Transactions → Advanced queries.  
 4. Use **TRUNCATE or DROP** to reset tables before re-running scripts.
 
----
-
-## SQL Commands File  
-[SQL_Day1_to_Day9.sql](./SQL_Day1_to_Day9.sql)
 
 ---
 
