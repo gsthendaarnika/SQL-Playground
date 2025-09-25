@@ -1,67 +1,109 @@
-# SQL Practice – DDL, DML, DQL  
+# SQL Practice Notes – Days 1 to 9  
 
-This repository contains my SQL practice notes prepared in **MySQL Workbench**.  
-It covers **Data Definition Language (DDL)**, **Data Manipulation Language (DML)**, and **Data Query Language (DQL)**, along with examples of constraints, keys, and practice datasets.  
-The purpose of this work is interview preparation and strengthening SQL fundamentals.  
+This repository contains my **SQL practice notes** prepared in **MySQL Workbench**.  
+It covers SQL topics from **basics to advanced concepts**, following a structured 9-day learning plan.  
+The purpose of this work is **interview preparation** and **strengthening SQL fundamentals**.
 
 ---
 
-##  What’s Inside  
+## Day-wise Learning
 
-### DDL (Data Definition Language)  
-- Creating and dropping databases.  
-- Creating tables with `NOT NULL`, `PRIMARY KEY`, `UNIQUE`, `CHECK`, and `DEFAULT`.  
-- Using `ALTER TABLE` to:  
-  - Rename tables and columns.  
-  - Modify column datatypes.  
-  - Add or drop columns.  
-- Dropping and truncating tables.  
+### Day 1: DDL, DML & DQL  
+- **DDL (Data Definition Language)**: `CREATE`, `ALTER`, `DROP`, `TRUNCATE` tables & databases.  
+- **DML (Data Manipulation Language)**: `INSERT`, `UPDATE`, `DELETE` records.  
+- **DQL (Data Query Language)**: `SELECT` statements, filtering with `WHERE`, `LIKE`, `BETWEEN`, `DISTINCT`.  
+- **Constraints & Keys**: `PRIMARY KEY`, `FOREIGN KEY`, `UNIQUE`, `CHECK`, `DEFAULT`.
 
-### DML (Data Manipulation Language)  
-- Inserting multiple rows in one query.  
-- Updating records with `WHERE`.  
-- Deleting specific rows.  
+---
 
-### DQL (Data Query Language)  
-- Selecting all records.  
-- Filtering with `WHERE`, `BETWEEN`, `LIKE`, `AND`, `OR`.  
-- Using `DISTINCT` for retriving unique values.  
+### Day 2: Date, String & Numeric Functions, Aggregate Functions  
+- **Date Functions**: `CURDATE()`, `DATE_ADD()`, `DATEDIFF()`, etc.  
+- **String Functions**: `CONCAT()`, `SUBSTRING()`, `LENGTH()`, `TRIM()`, `UPPER()/LOWER()`.  
+- **Numeric Functions**: `ROUND()`, `FLOOR()`, `CEIL()`, `ABS()`.  
+- **Aggregate Functions**: `SUM()`, `AVG()`, `MIN()`, `MAX()`, `COUNT()`.
 
-### Constraints & Keys  
-- **Primary Key** – Unique identifier for rows.  
-- **Foreign Key** – Ensures referential integrity between tables.  
-- **Composite Key** – Multiple columns as a primary key.  
-- **Check Constraint** – Enforces valid ranges or formats.  
+---
 
-### Practice Datasets  
-1. **Teachers Table** → Practice with constraints (PK, NOT NULL, UNIQUE, CHECK, DEFAULT).  
-2. **Employee Table** → DQL queries with filters on age, salary, roles, and dates.  
-3. **Sales Data Table** → Queries using `WHERE`, `LIKE`, `BETWEEN`, and `DISTINCT`.  
+### Day 3: Set Operators, Logical Operators & Handling NULLs  
+- **Set Operators**: `UNION`, `UNION ALL`, `INTERSECT`, `EXCEPT`.  
+- **Logical Operators**: `AND`, `OR`, `NOT`, `IN`, `BETWEEN`.  
+- **NULL Handling**: `IS NULL`, `IFNULL()`, `COALESCE()`.
+
+---
+
+### Day 4: Joins & Combining Tables  
+- **INNER JOIN**, **LEFT JOIN**, **RIGHT JOIN**, **FULL OUTER JOIN**.  
+- Filtering joined data with `ON` and `WHERE`.  
+- Practical examples combining `student` and `course` tables.  
+
+---
+
+### Day 5: Subqueries & Advanced Subquery Types  
+- **Single-row** and **multi-row subqueries** (`=`, `IN`, `ANY`, `ALL`).  
+- **Correlated subqueries** (dependent on outer query).  
+- Subqueries in `FROM`, `WHERE`, `SELECT`.  
+- Ranking and filtering using subqueries.
+
+---
+
+### Day 6: Window Functions, CTEs & Views  
+- **Window Functions**: `RANK()`, `DENSE_RANK()`, `ROW_NUMBER()`.  
+- Partitioning by group (`PARTITION BY`) for analytics.  
+- **LEAD() / LAG()** for comparing rows within groups.  
+- **CTEs (Common Table Expressions)** using `WITH`.  
+- **Views**: Permanent saved queries; simple and complex joins.
+
+---
+
+### Day 7: Stored Procedures & Functions  
+- **Stored Procedures** with `IN` and `OUT` parameters.  
+- Calling procedures and capturing output.  
+- **Functions**: Custom SQL functions with conditional logic (`IF`, `ELSEIF`, `ELSE`).  
+- Using `DELIMITER` for procedure and function definitions.
+
+---
+
+### Day 8: Triggers & Transaction Control (TCL)  
+- **Triggers**: Automatic actions on `INSERT`, `UPDATE`, `DELETE`.  
+- Maintaining **audit logs** automatically.  
+- **Transactions**: `START TRANSACTION`, `SAVEPOINT`, `ROLLBACK`, `COMMIT`.  
+- Ensuring **atomicity** and consistency during multiple operations.
+
+---
+
+### Day 9: Case Expressions, Indexes & ACID Properties  
+- **CASE WHEN** expressions for conditional logic in queries.  
+- **Indexes**: `CREATE INDEX`, `DROP INDEX`, impact on performance.  
+- **ACID Properties**:  
+  - **Atomicity** – all or nothing.  
+  - **Consistency** – database remains in valid state.  
+  - **Isolation** – concurrent transactions don’t interfere.  
+  - **Durability** – committed changes are permanent.
+
+---
+
+## Practice Datasets  
+- **Students & Courses** – Joins, subqueries, aggregates.  
+- **Employees & Employees3** – Window functions, CTEs, ranking, stored procedures, functions.  
+- **Sales & Products** – Filters, aggregates, triggers, stored procedures.  
+- **Data Table** – Aggregate functions, subqueries, CASE expressions.
 
 ---
 
 ## How to Use  
+1. Download the repository ZIP file.  
+2. Open **MySQL Workbench**.  
+3. Run SQL scripts day by day, following this order:  
+   - DDL → DML → DQL → Joins → Subqueries → Window functions → Procedures/Functions → Triggers → Transactions → Advanced queries.  
+4. Use **TRUNCATE or DROP** to reset tables before re-running scripts.
 
-1. Download this repository as a ZIP file.  
-2. Extract the ZIP file on your computer.  
-3. Open **MySQL Workbench** (or any SQL client).  
-4. Copy the queries from the `.sql` file.  
-5. Run them step by step in this order:  
-   - Create database and tables (DDL).  
-   - Insert sample data (DML).  
-   - Run queries (DQL).  
+---
 
-## Notes  
-- Always run DDL before DML and DQL.  
-- Drop or truncate tables before re-running inserts to avoid duplicates.
+## SQL Commands File  
+[SQL_Day1_to_Day9.sql](./SQL_Day1_to_Day9.sql)
 
- ---
- ## SQL Commands File  
-Open the file here --> [SQL_DDL,DML,DQL_EXAMPLES.sql](./SQL_DDL,DML,DQL_EXAMPLES.sql)
-
-This version is **exactly upload-ready** for GitHub. It describes your Workbench file, explains what’s inside, gives instructions, and even sample queries.  
-
- 
+---
 
 ## 👩‍💻 Author  
-ThenDaarnika
+**ThenDaarnika GS**  
+ECE Graduate | SQL Enthusiast | Data Analytics Learner
